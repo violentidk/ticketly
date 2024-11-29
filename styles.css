@@ -1,0 +1,19 @@
+/* Add the CSS here based on your original styles */
+.actions {
+  margin: 20px;
+}
+
+button {
+  background-color: #530a85;
+  color: #ffffff;
+  border: none;
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #6feaf6;
+  color: black;
+}
