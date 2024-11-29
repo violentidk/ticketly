@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="style.css" />
     <title>Reggie Theatre Booking</title>
   </head>
   <body>
     <div class="movie-container">
-      <label>Select the movie you want to see:</label>
+      <label for="movie">Select the movie you want to see:</label>
       <select id="movie">
         <option value="12">Spy Kids</option>
         <option value="11">Toy Story 4</option>
@@ -21,7 +21,7 @@
     <ul class="showcase">
       <li>
         <div class="seat"></div>
-        <small>N/A</small>
+        <small>Available</small>
       </li>
       <li>
         <div class="seat selected"></div>
@@ -33,17 +33,7 @@
       </li>
     </ul>
 
-    <div class="container">
-      <div class="spacing">
-        <!-- Dynamic Rows -->
-        <div class="row">
-          <div class="seat"></div>
-          <div class="seat"></div>
-          <div class="seat occupied"></div>
-          <div class="seat"></div>
-        </div>
-      </div>
-    </div>
+    <div class="container" id="seating-container"></div>
 
     <div class="actions">
       <button id="payButton">Pay</button>
@@ -51,12 +41,8 @@
       <button id="deleteButton">Delete</button>
     </div>
 
-    <div class="screen"></div>
     <p class="text">
-      You have selected <span id="count">0</span> seats, for a price of $<span
-        id="total"
-        >0</span
-      >
+      You have selected <span id="count">0</span> seats for a price of $<span id="total">0</span>.
     </p>
 
     <script src="script.js"></script>
